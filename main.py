@@ -66,7 +66,7 @@ if st.button("Scrape Followers"):
                 new_height = driver.execute_script("return arguments[0].scrollHeight", followers_popup)
 
                 # Scrape follower usernames using the updated class name
-                follower_elements = followers_popup.find_elements(By.CLASS_NAME, '_aacl')
+                follower_elements = followers_popup.find_elements(By.CLASS_NAME, '_ap3a _aaco _aacw _aacx _aad7 _aade')
                 for elem in follower_elements:
                     try:
                         username = elem.find_element(By.CSS_SELECTOR, 'a').get_attribute('href').split("/")[-2]
